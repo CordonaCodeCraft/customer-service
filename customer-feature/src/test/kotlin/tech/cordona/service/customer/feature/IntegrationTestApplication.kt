@@ -9,4 +9,3 @@ class IntegrationTestApplication
 fun main(args: Array<String>) {
 	runApplication<IntegrationTestApplication>(*args)
 }
-
