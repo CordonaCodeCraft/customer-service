@@ -23,7 +23,7 @@ class CreateAddress(
 		return saveAddress(
 			Address(
 				customer = request.customer,
-				customerId = request.customerID,
+				businessID = request.businessID,
 				country = country,
 				city = city,
 				zipCode = zipCode,

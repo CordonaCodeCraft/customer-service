@@ -15,7 +15,7 @@ class SaveCity(private val repository: CityRepository) {
 		City(
 			name = cityName,
 			country = country,
-			naturalId = NaturalID(naturalIDGenerator())
+			businessID = NaturalID(naturalIDGenerator())
 		)
 	)
 }

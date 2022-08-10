@@ -5,7 +5,7 @@ import tech.cordona.service.customer.model.reference.CustomerID
 
 data class CreateAddressRequest(
 	val customer: Customer,
-	val customerID: CustomerID,
+	val businessID: CustomerID,
 	val country: String,
 	val city: String,
 	val zipCode: Int,

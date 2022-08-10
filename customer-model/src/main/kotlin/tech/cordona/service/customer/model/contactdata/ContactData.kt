@@ -19,5 +19,5 @@ class ContactData(
 	val phoneNumber: String,
 	@Column(unique = true, nullable = false)
 	val email: String,
-	customerID: CustomerID
-) : BaseRelationalUUIDEntity(customerID.value)
+	businessID: CustomerID
+) : BaseRelationalUUIDEntity(businessID.value)

@@ -16,5 +16,5 @@ class City(
 	private val name: String,
 	@ManyToOne(fetch = LAZY)
 	private val country: Country,
-	naturalId: NaturalID
-) : BaseRelationalUUIDEntity(naturalId.value)
+	businessID: NaturalID
+) : BaseRelationalUUIDEntity(businessID.value)

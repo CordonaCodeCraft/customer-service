@@ -15,5 +15,5 @@ class ZipCode(
 	@MapsId
 	private val city: City,
 	private val code: Int,
-	naturalId: NaturalID
-) : BaseRelationalUUIDEntity(naturalId.value)
+	businessID: NaturalID
+) : BaseRelationalUUIDEntity(businessID.value)

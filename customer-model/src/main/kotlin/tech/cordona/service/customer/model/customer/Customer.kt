@@ -8,4 +8,4 @@ import javax.persistence.Table
 
 @Entity(name = "Customer")
 @Table(name = "customers")
-class Customer(customerID: CustomerID) : BaseRelationalUUIDEntity(customerID.value)
+class Customer(businessID: CustomerID) : BaseRelationalUUIDEntity(businessID.value)

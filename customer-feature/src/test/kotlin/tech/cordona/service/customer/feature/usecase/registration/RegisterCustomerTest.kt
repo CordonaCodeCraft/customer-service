@@ -23,7 +23,7 @@ internal class RegisterCustomerTest(
 	fun `successfully registers a customer`() {
 		val registeredCustomer = registerCustomer(customerRegistrationRequest)
 
-		val naturalID = registeredCustomer.customerID
+		val businessID = registeredCustomer.businessID
 		val id = registeredCustomer.customer.id!!
 
 		val retrievedCustomer = customerRepository.findById(id).get()
@@ -36,10 +36,10 @@ internal class RegisterCustomerTest(
 		assertThat(retrievedContactData).isNotNull
 		assertThat(retrievedAddress).isNotNull
 
-		assertThat(retrievedCustomer.naturalId).isEqualTo(naturalID.value)
-		assertThat(retrievedPersonalData.naturalId).isEqualTo(naturalID.value)
-		assertThat(retrievedContactData.naturalId).isEqualTo(naturalID.value)
-		assertThat(retrievedAddress.naturalId).isEqualTo(naturalID.value)
+		assertThat(retrievedCustomer.naturalId).isEqualTo(businessID.value)
+		assertThat(retrievedPersonalData.naturalId).isEqualTo(businessID.value)
+		assertThat(retrievedContactData.naturalId).isEqualTo(businessID.value)
+		assertThat(retrievedAddress.naturalId).isEqualTo(businessID.value)
 	}
 
 }

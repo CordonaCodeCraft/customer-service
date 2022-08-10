@@ -5,5 +5,5 @@ import tech.cordona.service.customer.model.reference.CustomerID
 
 data class SavedCustomerData(
 	val customer: Customer,
-	val customerID: CustomerID
+	val businessID: CustomerID
 )

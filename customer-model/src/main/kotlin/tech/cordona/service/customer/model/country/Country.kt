@@ -11,5 +11,5 @@ import javax.persistence.Table
 class Country(
 	@Column(unique = true, nullable = false)
 	val name: String,
-	naturalId: NaturalID
-) : BaseRelationalUUIDEntity(naturalId.value)
+	businessID: NaturalID
+) : BaseRelationalUUIDEntity(businessID.value)

@@ -15,7 +15,7 @@ class SaveZipCode(private val repository: ZipCodeRepository) {
 		ZipCode(
 			city = city,
 			code = zipCode,
-			naturalId = NaturalID(naturalIDGenerator())
+			businessID = NaturalID(naturalIDGenerator())
 		)
 	)
 }

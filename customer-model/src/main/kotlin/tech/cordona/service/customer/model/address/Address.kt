@@ -30,5 +30,5 @@ class Address(
 	private val entrance: String,
 	private val floorNo: Int,
 	private val apartmentNo: Int,
-	customerId: CustomerID
-) : BaseRelationalUUIDEntity(customerId.value)
+	businessID: CustomerID
+) : BaseRelationalUUIDEntity(businessID.value)

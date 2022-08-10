@@ -9,7 +9,7 @@ import tech.cordona.service.customer.model.personaldata.PersonalData
 fun createAddressRequest(savedCustomerData: SavedCustomerData, request: RegisterCustomerRequest) =
 	CreateAddressRequest(
 		customer = savedCustomerData.customer,
-		customerID = savedCustomerData.customerID,
+		businessID = savedCustomerData.businessID,
 		country = request.country,
 		city = request.city,
 		zipCode = request.zipCode,
@@ -23,7 +23,7 @@ fun createAddressRequest(savedCustomerData: SavedCustomerData, request: Register
 fun createPersonalData(savedCustomerData: SavedCustomerData, request: RegisterCustomerRequest) =
 	PersonalData(
 		customer = savedCustomerData.customer,
-		customerID = savedCustomerData.customerID,
+		businessID = savedCustomerData.businessID,
 		firstName = request.firstName,
 		middleName = request.middleName,
 		lastName = request.lastName,
@@ -36,7 +36,7 @@ fun createPersonalData(savedCustomerData: SavedCustomerData, request: RegisterCu
 fun createContactData(savedCustomerData: SavedCustomerData, request: RegisterCustomerRequest) =
 	ContactData(
 		customer = savedCustomerData.customer,
-		customerID = savedCustomerData.customerID,
+		businessID = savedCustomerData.businessID,
 		phoneNumber = request.phoneNumber,
 		email = request.email
 	)

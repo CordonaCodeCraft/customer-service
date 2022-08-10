@@ -30,5 +30,5 @@ class PersonalData(
 	val personalNo: String,
 	@Column(unique = true, nullable = false)
 	val passportNo: String,
-	customerID: CustomerID
-) : BaseRelationalUUIDEntity(customerID.value)
+	businessID: CustomerID
+) : BaseRelationalUUIDEntity(businessID.value)

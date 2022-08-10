@@ -14,6 +14,6 @@ class SaveCustomer(private val repository: CustomerRepository) {
 	operator fun invoke(personalNo: String, passportNo: String): SavedCustomerData {
 		val customerID = CustomerID(naturalIDGenerator(personalNo, passportNo))
 		val savedCustomer = repository.save(Customer(customerID))
-		return SavedCustomerData(customer = savedCustomer, customerID = customerID)
+		return SavedCustomerData(customer = savedCustomer, businessID = customerID)
 	}
 }

@@ -18,7 +18,7 @@ class SaveCountry(
 			?: repository.save(
 				Country(
 					name = countryName,
-					naturalId = NaturalID(naturalIDGenerator())
+					businessID = NaturalID(naturalIDGenerator())
 				)
 			)
 }
