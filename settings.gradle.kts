@@ -2,5 +2,6 @@ rootProject.name = "customer-service"
 include(
 	"customer-application",
 	"customer-model",
-	"customer-persistence"
+	"customer-feature",
+	"customer-api",
 )

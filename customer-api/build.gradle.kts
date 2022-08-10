@@ -1,5 +1,3 @@
-import org.springframework.boot.gradle.tasks.bundling.BootJar
-
 plugins {
 	id("project-conventions")
 	id("kotlin-conventions")
@@ -7,9 +5,6 @@ plugins {
 }
 
 dependencies {
-	implementation(project(":customer-api"))
+	implementation(project(":customer-model"))
 	implementation("org.springframework.boot:spring-boot-starter-web")
 }
-
-val bootJar: BootJar by tasks
-bootJar.enabled = true
