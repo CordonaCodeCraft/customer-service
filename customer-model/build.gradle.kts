@@ -5,6 +5,6 @@ plugins {
 }
 
 dependencies {
-	implementation("tech.cordona:relational-entity-support:0.0.9-SNAPSHOT")
+	implementation("tech.cordona:relational-entity-support:0.0.10-SNAPSHOT")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 }

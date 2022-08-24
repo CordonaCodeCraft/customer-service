@@ -14,6 +14,7 @@ dependencies {
 	implementation("mysql:mysql-connector-java:8.0.30")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
 }
+
 repositories {
 	mavenCentral()
 }
